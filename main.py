@@ -115,12 +115,12 @@ def main():
         os.makedirs(directory)
     # Define the headers
     headers = [
-        "id", "name", "deploymentStatus", "hstsEnabled", "http2Enabled", "ssrfEnabled", "awBypassEnabled", "workflowName",
-        "hstsAge", "ipRange", "creationDate", "redirect", "cdnEnabled", "mtlsEnabled", "customDeployment", "Record types",
-        "FQDNS", "mainDomain", "DDoS protection status", "allowextension status", "allowextension configuration",
-        "Vulnerabilities status", "Vulnerabilities configuration", "Database Status", "Database configuration",
-        "Antibot Status", "ciphersuite settings", "TLS/SSL versions", "Certificate details",
-        "Certificate validFrom", "Certificate validTo", "Service information","HC information"
+        "name", "deploymentStatus", "mainDomain",
+        "FQDNS", "creationDate", "Antibot Status","allowextension status", "allowextension configuration", "Vulnerabilities status", "Vulnerabilities configuration","Database Status", "Database configuration",
+        "hstsEnabled", "http2Enabled", "ssrfEnabled", "awBypassEnabled", "workflowName",
+        "hstsAge", "ipRange", "redirect", "cdnEnabled", "mtlsEnabled", "customDeployment", "Record types","id",  "DDoS protection status",
+         "ciphersuite settings", "Certificate details",
+        "Certificate validFrom", "Certificate validTo", "Service information","HC information", "TLS/SSL versions"
     ]
     
     found=False
