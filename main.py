@@ -13,7 +13,7 @@ def GenerateFile(data):
         if mode == "FAILOVER":
             primary = operation_mode.get("failoverMode", {}).get("primaryAddress", {})
             secondary = operation_mode.get("failoverMode", {}).get("secondaryAddress", {})
-            fqdn_value = f"Primary - {primary.get('addressType', 'N/A')}: {primary.get('address', 'N/A')}\nSecondary - {secondary.get('addressType', 'N/A')}: {secondary.get('address', 'N/A')}"
+            fqdn_value = f"Primary - {primary.get('addressType', 'N/A')}: {primary.get('address ', 'N/A')}\nSecondary - {secondary.get('addressType', 'N/A')}: {secondary.get('address', 'N/A')}"
         else:
             fqdn_value = "\n".join([f"{srv['addressType']}: {srv['address']}" for srv in operation_mode.get("loadBalanceMode", {}).get("serverAddresses", [])] or ["N/A"])
         
